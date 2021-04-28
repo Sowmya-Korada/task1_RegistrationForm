@@ -1,0 +1,106 @@
+body{
+    background-color: #efbbcf;
+}
+
+#account{
+
+    background-color: #8675a9;
+    margin: 0 auto;
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 2%;
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 10px;
+}
+
+#user{
+    background-color: #8675a9;
+    margin: 0 auto;
+    width: 60%;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 10px;
+}
+
+#tab2{;
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 1%;
+    width: 100%;
+    border-spacing:10px;
+    
+}
+#tab2 td,#tab2 th{
+    background-color: #c3aed6;
+    padding: 1%;
+    box-shadow: 2px 5px 4px black;
+    border-radius:2px;
+}
+
+#tab {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+   width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+  }
+  
+  #tab td, #tab th {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 8px;
+   
+  }
+  
+  
+  #tab tr:nth-child(even){background-color: #c3aed6;}
+  #tab tr:nth-child(odd){background-color: #f2f2f2;}
+
+  #tab tr:hover {background-color: #72147e;
+        color: whitesmoke;
+}
+
+  #uname,#email,#pw1,#pw2{
+      width: 60%;
+  }
+
+ /* #sub{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+   
+}*/
+#tab3{
+    padding: 1%;
+    width: 100%;
+    border-spacing:10px;
+}
+
+
+#submit{
+    width: 100px;
+    height: 40px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-right: 2%;
+    box-shadow: 3px 4px 2px #888888;
+}
+
+#submit:hover ,#reset:hover {background-color: purple;
+color: white;
+}
+
+#reset{
+    width: 100px;
+    height: 40px; 
+    font-size: large;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-left: 2%;
+    box-shadow: 3px 4px 2px #888888;
+}
+  
+
+

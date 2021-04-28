@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body >
+   <h1 style="text-align: center;">Registration Form</h1>
+   <div id="main">
+       <form onsubmit="fun()">
+
+           <div id="account">
+            <h2 style="text-align: center;">Account</h2>
+            <table id="tab2">
+                <tr>
+                    <th><label for="uname"><b style="color:#e40017; font-size: x-large;">*</b> Username:</label></th>
+                    <td><input type="text" id="uname" name="uname" placeholder="Username"  required></td>
+                </tr>
+                <tr>
+                    <th><label for="email"><b style="color:#e40017; font-size: x-large;">*</b>Your email:</label></th>
+                    <td><input type="email" id="email" placeholder="youremail@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <th><label for="pw1"><b style="color:#e40017; font-size: x-large;">*</b>Your Password:</label></th>
+                    <td><input type="password" id="pw1" placeholder="password" required></td>
+                </tr>
+                <tr>
+                    <th><label for="pw2"><b style="color:#e40017; font-size: x-large;">*</b>Confirm your password:</label></th>
+                    <td><input type="password" id="pw2" placeholder="password" required></td>
+                </tr>
+            </table>
+           </div>
+
+           <div id="user">
+            <h2 style="text-align: center;">User details</h2>
+           <table  id="tab">
+
+            <tr>
+                <th><label for="fname"><b style="color:#e40017; font-size: x-large;">*</b>First name:</label></th>
+                <td><input type="text" id="fname" name="fname" maxlength="50" placeholder="enter your fisrt name" required> </td>
+            </tr>
+
+            <tr>
+                <th><label for="lname">Last name:</label></th>
+                <td><input type="text" id="lname" name="lname" maxlength="50" placeholder="enter your Last name"></td>
+            </tr>
+
+            <tr>
+                <th>DOB</th>
+                <td><input type="date"></td>
+            </tr>
+
+            <tr>
+                <th><label for="ph"><b style="color:#e40017; font-size: x-large;">*</b>Phone Number:</label></th>
+                <td><input type="text" id="ph" name="phone" maxlength="10" required></td>
+            </tr>
+
+            <tr>
+                <th>Country</th>
+                <td>
+                    <select id="country" name="country">
+                        <option value="America">America</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Comoros">Comoros</option>
+                        <option value="Congo">Congo</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="India" selected>India</option>
+                        <option value="Iran">Iran</option>
+                        <option value="Iraq">Iraq</option>
+                        <option value="Ireland">Ireland</option>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Address</th>
+                <td><textarea rows="6" cols="40"></textarea></td>
+            </tr>
+
+            <tr>
+                <th>Gender</th>
+                <td>
+                <input type="radio" name="Gender" value="M" />
+                <label for="Male">Male</label>
+                <input type="radio" name="Gender" value="F" />
+                <label for="Female ">Female</label>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Qualification</th>
+                <td>
+                    <input type="radio" id="qual1" name="qualification">
+                    <label for="qual1">BTech</label>
+                    <input type="radio" id="qual2" name="qualification">
+                    <label for="qual2">Mtech</label>
+                    <input type="radio" id="qual3" name="qualification">
+                    <label for="qual3">MCA</label>
+                    <input type="radio" id="qual4" name="qualification">
+                    <label for="qual4">Non Technical</label>
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Programming Skills</th>
+                <td>
+                    <input type="checkbox" id="pro1" name="program">
+                    <label for="pro1">Python</label>
+                    <input type="checkbox" id="pro2" name="program">
+                    <label for="pro2">Java</label>
+                    <input type="checkbox" id="pro3" name="program">
+                    <label for="pro3">C</label>
+                    <input type="checkbox" id="pro4" name="program">
+                    <label for="pro4">C++</label>
+                </td>
+            </tr>
+
+           </table>
+           </div>
+           <br>
+           
+           <div id="sub">
+               <table id="tab3">
+                   <tr>
+                       <td colspan="2" align="center">
+                        <input type="submit" value="Submit" id="submit">
+            
+                        <input type="reset" value="reset" id="reset">     
+                       </td>
+                   </tr>
+               </table>
+           </div>   
+       </form>
+   </div>
+
+<script>
+    var x;
+    x=prompt("Your name? ")
+    alert("Hello "+x+" ! Kindly fill the form.")
+    function fun(){
+        alert("Form submitted successfully!")
+        document.write("hey "+x+"<h1>Your response is recorded.You can submit the form only once. Thank you :)<h1>")
+        document.body.style.backgroundColor = "#efbbcf";
+    }
+</script>
+
+</body>
+</html>
+
+
