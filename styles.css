@@ -1,5 +1,17 @@
 body{
-    background-color: #efbbcf;
+    background-image: url("https://image.freepik.com/free-vector/waves-forms-purple-background_24908-64533.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+}
+#main1{
+    margin: 0 auto;
+    margin-top: 0px;
+    width: 70%;
+    background-color: whitesmoke;
+    /*background-color: #efbbcf;*/
+    border-radius: 10px;
 }
 
 #account{
@@ -8,7 +20,7 @@ body{
     margin: 0 auto;
     width: 60%;
     padding: 10px;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     box-shadow: 5px 10px 8px #888888;
     border-radius: 10px;
 }
@@ -79,6 +91,7 @@ body{
 
 
 #submit{
+    background-color: violet;
     width: 100px;
     height: 40px;
     font-size: large;
@@ -93,6 +106,7 @@ color: white;
 }
 
 #reset{
+    background-color: violet;
     width: 100px;
     height: 40px; 
     font-size: large;

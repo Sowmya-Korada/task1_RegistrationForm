@@ -6,9 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>registration form</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <script>
+        var x;
+        x=prompt("Your name? ")
+        alert("Hello "+x+" ! Kindly fill the form.")
+        function fun(){
+            alert("Form submitted successfully!")
+                var firstname=document.getElementById("fname").value; 
+                var lastname=document.getElementById("lname").value;   
+                var mail=document.getElementById("email").value;   
+                var phone=document.getElementById("ph").value; 
+                var username=document.getElementById("uname").value; 
+                document.write("<h2>Your form details:</h2>Full Name: "+firstname+" "+lastname+"<br>User Name: "+username+"<br>Mail ID: "+mail+"<br>Phone Number: "+phone+"<br>"); 
+                document.write("<h1>Your response is recorded.You can submit the form only once. Thank you :)<h1>")
+                document.body.style.backgroundColor = "#efbbcf";
+        }
+    </script>
 </head>
 <body >
-   <h1 style="text-align: center;">Registration Form</h1>
+    
+    <div id="main1">
+        <h1 style="text-align: center;">Registration Form</h1>
    <div id="main">
        <form onsubmit="fun()">
 
@@ -16,19 +34,19 @@
             <h2 style="text-align: center;">Account</h2>
             <table id="tab2">
                 <tr>
-                    <th><label for="uname"><b style="color:#e40017; font-size: x-large;">*</b> Username:</label></th>
+                    <th><label for="uname"><b style="color:#e40017; font-size: x-large;">*</b> <img src="data:image/png;base64,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" alt="usericon" width="20px" height="20px"> Username:</label></th>
                     <td><input type="text" id="uname" name="uname" placeholder="Username"  required></td>
                 </tr>
                 <tr>
-                    <th><label for="email"><b style="color:#e40017; font-size: x-large;">*</b>Your email:</label></th>
+                    <th><label for="email"><b style="color:#e40017; font-size: x-large;">*</b> <img src="https://cdn4.iconfinder.com/data/icons/aiga-symbol-signs/612/aiga_mail_bg-512.png" alt="emailicon" height="20px" width="20px"> Your email:</label></th>
                     <td><input type="email" id="email" placeholder="youremail@gmail.com" required></td>
                 </tr>
                 <tr>
-                    <th><label for="pw1"><b style="color:#e40017; font-size: x-large;">*</b>Your Password:</label></th>
+                    <th><label for="pw1"><b style="color:#e40017; font-size: x-large;">*</b> <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/key-975-695090.png" alt="passwordicon" width="20px" height="20px"> Your Password:</label></th>
                     <td><input type="password" id="pw1" placeholder="password" required></td>
                 </tr>
                 <tr>
-                    <th><label for="pw2"><b style="color:#e40017; font-size: x-large;">*</b>Confirm your password:</label></th>
+                    <th><label for="pw2"><b style="color:#e40017; font-size: x-large;">*</b> <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/key-975-695090.png" alt="passwordicon" width="20px" height="20px"> Confirm your password:</label></th>
                     <td><input type="password" id="pw2" placeholder="password" required></td>
                 </tr>
             </table>
@@ -50,7 +68,7 @@
 
             <tr>
                 <th>DOB</th>
-                <td><input type="date"></td>
+                <td><input type="date" id="dob"></td>
             </tr>
 
             <tr>
@@ -123,6 +141,11 @@
                 </td>
             </tr>
 
+            <tr>
+                <th><label for="project"><b style="color:#e40017; font-size: x-large;">*</b>Link to your projects:</label></th>
+                <td><input type="url" id="project" name="project" style="width: 90%;" required> </td>
+            </tr>
+
            </table>
            </div>
            <br>
@@ -140,8 +163,9 @@
            </div>   
        </form>
    </div>
+</div>
 
-<script>
+<!--<script>
     var x;
     x=prompt("Your name? ")
     alert("Hello "+x+" ! Kindly fill the form.")
@@ -151,8 +175,6 @@
         document.body.style.backgroundColor = "#efbbcf";
     }
 </script>
-
+-->
 </body>
 </html>
-
-
